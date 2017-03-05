@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <title> Mirror </title>
+</head>
+
+<body>
+    <script>
+        var char = '';
+        var bosluq = '';
+        var n =Number(prompt("Enter the number",""))
+        for (var i = 0; i < n; i++) {
+            char = char + '#';
+            for (var j = 0; j < n*2 - (i + 1) * 2; j++) {
+                bosluq = bosluq + '&nbsp;&nbsp;';
+            }
+            document.write(char + bosluq + char + '<br>');
+            bosluq = '';
+        }
+    </script>
+</body>
+
+</html>

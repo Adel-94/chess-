@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title> chess </title>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .cell {
+            width: 30px;
+            height: 30px;
+            float: left;
+            border: 1px solid deeppink;
+        }
+        .main {
+            width: 240px;
+            height: 240px;
+            margin: 0 auto;
+        }
+        .row:nth-child(odd) .cell:nth-child(even) {
+            background-color: lightpink;
+        }
+        
+        .row:nth-child(odd).cell:nth-child(odd) {
+            background-color: white;
+        }
+        
+        .row:nth-child(even) .cell:nth-child(odd) {
+            background-color: lightpink;
+        }
+        
+        .row:nth-child(even) .cell:nth-child(even) {
+            background-color: white;
+        }
+    </style>
+</body>
+
+</html>
